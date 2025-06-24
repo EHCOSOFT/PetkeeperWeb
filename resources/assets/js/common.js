@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    // 스크롤 이벤트 처리
+    const $header = $('.header');
+
+    if ($header.length) {
+        $(window).on('scroll', function () {
+            const scrollTop = $(this).scrollTop();
+
+            if (scrollTop > 20) {
+                $header.addClass('active');
+            } else {
+                $header.removeClass('active');
+            }
+        });
+    }
+
     /**** 모달 이벤트 ****/
 
     function removeDefaultEvent(e) {

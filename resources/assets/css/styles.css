@@ -15,8 +15,8 @@
     background: rgba(234, 246, 236, 0.10) url(../img/main/hero-bg.svg);
     background-size: cover;
     border-radius: 0px 0px 40px 40px;
-    min-height: 80vh;
-    max-height: 600px;
+    min-height: 60vh;
+    max-height: 400px;
     height: 100%;
 }
 
@@ -394,6 +394,19 @@
     font-weight: var(--font-400-regular);
 }
 
+.btn-download {
+    align-items: center;
+    color: var(--color-gray-70);
+    font-size: var(--font-14-xs);
+    font-weight: var(--font-500-medium);
+    display: flex;
+    gap: var(--space-4-min);
+    margin: var(--space-20-md) 0 0 0;
+}
+
+.btn-download img {
+    width: max-content;
+}
 
 .terms-area {
     display: flex;
