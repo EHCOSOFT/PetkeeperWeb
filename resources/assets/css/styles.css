@@ -15,7 +15,7 @@
     background: rgba(234, 246, 236, 0.10) url(../img/main/hero-bg.svg);
     background-size: cover;
     border-radius: 0px 0px 40px 40px;
-    min-height: 60vh;
+    min-height: 70vh;
     max-height: 400px;
     height: 100%;
 }

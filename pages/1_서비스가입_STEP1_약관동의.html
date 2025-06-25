@@ -69,8 +69,12 @@
                             </div>
                             <div class="terms-group">
                                 <div class="check-group outline">
-                                    <input type="checkbox" id="checkAll" class="check-all">
-                                    <label for="checkAll">약관 전체동의</label>
+                                    <input type="checkbox" id="cheAll" class="check-all">
+                                    <label for="cheAll">약관 전체동의</label>
+                                </div>
+                                <div class="check-group outline error">
+                                    <input type="checkbox" id="cheAll01" class="check-all">
+                                    <label for="cheAll01">약관 전체동의</label>
                                 </div>
                                 <div class="check-wrap">
                                     <div class="check-group">
@@ -122,6 +126,27 @@
                                         </div>
                                         <button type="button" class="btn btn-md btn-primary">인증</button>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group error">
+                                    <label for="phoneNumber" class="label-hidden">휴대폰번호</label>
+                                    <div class="input-group-field">
+                                        <input type="text" placeholder="휴대폰번호를 입력" id="phoneNumber">
+                                        <button type="button" class="btn btn-md btn-primary" disabled>인증번호 요청</button>
+                                    </div>
+                                    <small>휴대폰 번호가 입력되지 않았습니다.</small>
+                                </div>
+                                <div class="input-group error">
+                                    <label for="cerNumber" class="label-hidden">인증번호</label>
+                                    <div class="input-group-field">
+                                        <div class="input-group-number">
+                                            <input type="text" placeholder="인증번호를 입력" id="cerNumber">
+                                            <span class="input-time">05:00</span>
+                                        </div>
+                                        <button type="button" class="btn btn-md btn-primary">인증</button>
+                                    </div>
+                                    <small>인증번호 입력시간이 초과되었습니다.</small>
                                 </div>
                             </div>
                         </div>
@@ -1291,6 +1316,7 @@
     </div>
 
     <script src="../resources/assets/lib/jquery.min.js"></script>
+    <script src="../resources/assets/lib/swiper-bundle.min.js"></script>
     <script src="../resources/assets/js/common.js"></script>
 </body>
 

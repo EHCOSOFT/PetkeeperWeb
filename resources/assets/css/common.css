@@ -535,6 +535,7 @@ button:not(:disabled) {
 .header {
     align-items: center;
     background: transparent;
+    border-bottom: 1px solid transparent;
     display: flex;
     height: 56px;
     position: sticky;
@@ -545,6 +546,7 @@ button:not(:disabled) {
 
 .header.active {
     background: var(--color-white);
+    border-color: var(--color-gray-10);
 }
 
 .header .container {
@@ -1193,6 +1195,20 @@ button:not(:disabled) {
     width: 100%;
 }
 
+.input-group.error input {
+    border-color: var(--color-red-60);
+}
+
+.input-group small {
+    display: none;
+}
+
+.input-group.error small {
+    display: block;
+    color: var(--color-red-60);
+    font-size: var(--font-14-xs);
+}
+
 /* checkbox */
 .terms-group {
     display: flex;
@@ -1259,6 +1275,10 @@ button:not(:disabled) {
 
 .check-group.outline input:checked+label {
     border-color: var(--color-primary-60);
+}
+
+.check-group.error label {
+    border-color: var(--color-red-60);
 }
 
 /* radio */
